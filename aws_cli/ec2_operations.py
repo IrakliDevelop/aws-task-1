@@ -1,9 +1,10 @@
 import boto3
 from botocore.exceptions import BotoCoreError, ClientError
+from init_client import init_client
 
 def init_ec2_client():
     try:
-        ec2_client = boto3.client('ec2')
+        ec2_client = init_client('ec2')
         return ec2_client
     except (BotoCoreError, ClientError) as e:
         print(f"An error occurred while initiating EC2 client: {e}")

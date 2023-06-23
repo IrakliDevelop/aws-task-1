@@ -1,9 +1,10 @@
 import boto3
 from botocore.exceptions import BotoCoreError, ClientError
+from init_client import init_client
 
 def init_rds_client():
     try:
-        rds_client = boto3.client('rds')
+        rds_client = init_client('rds')
         return rds_client
     except (BotoCoreError, ClientError) as e:
         print(f"An error occurred while initiating RDS client: {e}")

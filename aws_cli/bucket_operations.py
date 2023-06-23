@@ -1,10 +1,11 @@
 import boto3
 from botocore.exceptions import BotoCoreError, ClientError
 from collections import defaultdict
+from init_client import init_client
 
 def init_s3_client():
     try:
-        s3_client = boto3.client('s3')
+        s3_client = init_client('s3')
         return s3_client
     except (BotoCoreError, ClientError) as e:
         print(f"An error occurred while initiating S3 client: {e}")
