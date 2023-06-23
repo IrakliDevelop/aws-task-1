@@ -8,6 +8,8 @@ packages = [{include = "task_1"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+boto3 = "^1.26.159"
+python-dotenv = "^1.0.0"
 
 
 [build-system]
