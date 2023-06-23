@@ -7,7 +7,7 @@ A command line interface (CLI) for AWS operations. It allows organizing files in
 
 ```bash
 git clone https://github.com/IrakliDevelop/aws-task-1.git
-cd aw-task-1
+cd aws-task-1
 ```
 
 2. Install dependencies using Poetry:
