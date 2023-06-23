@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "task-1"
+version = "0.1.0"
+description = "script for Task 1 for AWS with Python Group 2 at BTU"
+authors = ["Irakli Iremashvili"]
+readme = "README.md"
+packages = [{include = "task_1"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
